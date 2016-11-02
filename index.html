@@ -26,7 +26,7 @@
 	}
 	.eln-office-name{
 		display: none;
-	}	
+	}
 	td.eln-bodyregular:first-of-type {
 		font-size: 12px;
 	}
@@ -94,21 +94,21 @@
 	</div>
 
 		<div class="elexresults col-xs-12 col-md-4">
-		
+
 		<div class="candidateThumbs">
 			<img src="http://pubsys.miamiherald.com/static/media/projects/2016/photos/elexprimary/clinton.jpg" alt="Hillary Clinton" />
 			<img src="http://pubsys.miamiherald.com/static/media/projects/2016/photos/elexprimary/trump.jpg" alt="Donald Trump" style="border-radius:70px;"/>
-			
+
 		</div>
 
 		<h5 class="race-name">Florida - U.S. President</h5>
 
 		<script language="JavaScript"> showParty=0;showMax=0;n=2;showTitle=1;</script>
-		<script language="JavaScript" src="http://hosted.ap.org/elections/2016/general/by_race/FL_0.js?SITE=FLMIHELN&SECTION=POLITICS"></script> 
+		<script language="JavaScript" src="http://hosted.ap.org/elections/2016/general/by_race/FL_0.js?SITE=FLMIHELN&SECTION=POLITICS"></script>
 	</div>
 
 	<div class="elexresults col-xs-12 col-md-4 border-left border-sm-remove-left border-xs-remove-left">
-		
+
 		<div class="candidateThumbs">
 			<img src="http://pubsys.miamiherald.com/static/media/projects/2016/photos/elexprimary/gimenez.jpg" alt="Carlos Gimenez" />
 			<img src="http://pubsys.miamiherald.com/static/media/projects/2016/photos/elexprimary/regalado.jpg" alt="Raquel Regalado" />
@@ -118,38 +118,41 @@
 
 		<h5 class="race-name">Miami-Dade County Mayor</h5>
 
-		<script src="http://pubsys.miamiherald.com/static/testdir/mayor.js" type="text/javascript"></script> 
+		<script src="http://pubsys.miamiherald.com/static/testdir/mayor.js" type="text/javascript"></script>
 	</div>
 
 
-	<div class="elexresults col-xs-12 col-md-4 border-left border-sm-remove-left border-xs-remove-left">
-		
+	<div class="elexresults col-xs-12 col-md-4 border-left border-sm-remove-left border-xs-remove-left" id="senateRace">
+
 		<div class="candidateThumbs">
 			<img src="http://pubsys.miamiherald.com/static/media/projects/2016/photos/elexprimary/murphy.jpg" alt="Patrick Murphy"/>
 			<img src="http://pubsys.miamiherald.com/static/media/projects/2016/photos/elexprimary/rubio.jpg" alt="Marco Rubio"/>
 
 <!-- 			<span>&nbsp;</span> -->
-			
+
 		</div>
 
 		<h5 class="race-name">Florida Senate</h5>
 
 		<script language="JavaScript"> showParty=0;showMax=0;n=10;showTitle=1;</script>
-		<script language="JavaScript" src="http://hosted.ap.org/elections/2016/general/by_race/FL_11160.js?SITE=FLMIHELN&SECTION=POLITICS"></script> 
+		<script language="JavaScript" src="http://hosted.ap.org/elections/2016/general/by_race/FL_11160.js?SITE=FLMIHELN&SECTION=POLITICS"></script>
 	</div>
 
 	<div class="col-xs-12">
-		<p class="more-results">More results: 
-			<a href="http://results.enr.clarityelections.com/FL/Dade/63175/174974/en/summary.html" target="_blank">Miami-Dade County</a>  |  
-			<a href="http://enrpreview.electionsfl.org/BRO/1546/Summary/" target="_blank">Broward County</a>  |  
-			<a href="http://enr.electionsfl.org/MON/Summary/1533/" target="_blank">Monroe County</a>  |  
+		<p class="more-results">More results:
+			<a href="http://results.enr.clarityelections.com/FL/Dade/63175/174974/en/summary.html" target="_blank">Miami-Dade County</a>  |
+			<a href="http://enrpreview.electionsfl.org/BRO/1546/Summary/" target="_blank">Broward County</a>  |
+			<a href="http://enr.electionsfl.org/MON/Summary/1533/" target="_blank">Monroe County</a>  |
 			<a href="http://hosted.ap.org/dynamic/files/elections/2016/by_state/FL_Page_0830.html?SITE=FLMIHELN&SECTION=POLITICS" target="_blank">Florida Summary</a>
 		</p>
 	</div>
 
 <div style="clear:both"></div>
 	<script type="text/javascript">
-	$(function() {
-		$(".eln-bodyreg-bar:not(:contains('Murphy, Patrick')), .eln-bodyregular:not(:contains('Murphy, Patrick')));
-	})</script>
+		$(function() {
+			$("#senateRace tr.eln-bodyreg-bar, #senateRace tr.eln-bodyregular").hide();
+			$("#senateRace tr.eln-bodyreg-bar:contains('Rubio, Marco (i)'), #senateRace tr.eln-bodyregular:contains('Rubio, Marco (i)')").css('display', 'table-row');
+			$("#senateRace tr.eln-bodyreg-bar:contains('Murphy, Patrick'), #senateRace tr.eln-bodyregular:contains('Murphy, Patrick')").css('display', 'table-row');
+		})
+	</script>
 </div>
